@@ -25,7 +25,7 @@ trait AutoDelegate {
             if (!isset($deletageSchema['::'])) {
                 throw new \BadMethodCallException('At least the item \"::\" must be defined on delegateSchema');
             }
-            return call_user_func(array($deletageSchema['::'], $name), $args);
+            return call_user_func_array(array($deletageSchema['::'], $name), $args);
         }
     }
 
