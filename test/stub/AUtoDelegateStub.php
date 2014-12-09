@@ -44,7 +44,7 @@ class AutoDelegateStub2 extends AutoDelegateStub {
     public function _delegateSchema()
     {
         return [
-            '::' => $this->target
+            '*' => $this->target
         ];
     }
 
